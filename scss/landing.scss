@@ -1,0 +1,166 @@
+@import "variables";
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+  margin: 0;
+
+  a.link-button {
+    display: inline-block;
+    height: 40px;
+    background-color: #fff;
+    color: #02ccd6;
+    border-radius: 6px;
+    padding: 0 33px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+
+    &:hover {
+      color: #02ccd6
+    }
+  }
+}
+
+.btn, .link-button, .talk-button {
+  transition: all .3s;
+}
+
+.btn:hover, .link-button:hover:not([disabled]), .talk-button:hover {
+  transform: scale(1.1);
+  text-decoration: none!important;
+}
+
+.bg {
+  background: url("../img/bg.svg");
+  background-size: contain;
+}
+
+.btn {
+  box-sizing: border-box;
+  padding: 16px 46px;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+  background: $blue;
+  border-radius: 4px;
+}
+
+.question {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 1320px;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 60px;
+
+    background: #323232;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 500px) {
+  .question {
+    &__wrapper {
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+
+.footer {
+  margin: 140px 0 40px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1320px;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+  }
+
+  &__social-item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__content {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+
+    a {
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    margin: 70px 0 30px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .footer {
+    margin: 40px 0 20px;
+
+    &__social {
+      margin-bottom: 20px;
+    }
+
+    &__social-item:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@import "header";
+@import "sec1";
+@import "our_services";
+@import "our_works";

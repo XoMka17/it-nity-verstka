@@ -1,0 +1,44 @@
+.section-1 {
+  background-color: #02ccd6;
+  overflow: hidden;
+  height: 850px; }
+
+.section-1 svg {
+  min-width: 100%;
+  width: 1440px; }
+
+.section-1 svg use {
+  fill: #fff;
+  -webkit-transition: 1s ease-out;
+  -moz-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  transition: 1s ease-out; }
+
+.section-1 svg use.selected,
+.section-1 svg.mobile use.selected {
+  fill-opacity: .6;
+  transition: none; }
+
+.section-1-content {
+  position: absolute;
+  width: 100%;
+  top: 160px;
+  text-align: center;
+  color: #fff; }
+
+.section-1 h2 {
+  font-size: 40px;
+  font-weight: 600; } 
+
+.section-1 p {
+  margin-top: 20px;
+  font-size: 22px; }
+
+.section-1 .link-button {
+  margin-top: 40px; }
+
+.section-1 img {
+  max-width: 95%;
+  margin: 40px auto 0; }
+
+/*# sourceMappingURL=sec1.css.map */
